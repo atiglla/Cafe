@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import javafx.scene.control.MenuItem;
 public class TestCafe {
     public static void main(String[] args) {
         
@@ -35,5 +37,25 @@ public class TestCafe {
         appTest.addCustomer(customers);
         System.out.println("\n");
         }
+
+        appTest.printPriceChart("product", 1600, 4);
+
+
+        ArrayList <String> menuItems =new ArrayList<>();
+        ArrayList<Double> prices = new ArrayList<>();
+        
+        menuItems.add("a");
+        menuItems.add("b");
+        menuItems.add("c");
+        menuItems.add("d");
+
+        prices.add(1.0);
+        prices.add(2.0);
+        prices.add(3.0);
+        prices.add(4.0);
+
+        appTest.displayMenu(menuItems, prices);
+
+        appTest.addCustomers(customers);
     }
 }
